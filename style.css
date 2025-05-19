@@ -1,0 +1,23 @@
+.styl1 {
+    background-color: lightblue;
+    color: navy;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid navy;
+}
+
+.styl2 {
+    background-color: lightgreen;
+    color: darkgreen;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid darkgreen;
+}
+
+.styl3 {
+    background-color: lightcoral;
+    color: darkred;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid darkred;
+}
