@@ -1,5 +1,6 @@
 [
-    { "text": "To jest pierwszy element", "style": "styl1" },
-    { "text": "To jest drugi element", "style": "styl2" },
-    { "text": "To jest trzeci element", "style": "styl3" }
+    { "tag": "p", "variant": 1, "text": "To jest paragraf z wariantem 1." },
+    { "tag": "a", "variant": 2, "text": "To jest link z wariantem 2." },
+    { "tag": "em", "variant": 1, "text": "Tekst wyróżniony z wariantem 1." },
+    { "tag": "p", "variant": 2, "text": "Drugi paragraf z innym stylem." }
 ]

@@ -1,21 +1,25 @@
 document.getElementById('jsonFile').addEventListener('change', function(event) {
     const file = event.target.files[0];
+    if (!file) return;
+
     const reader = new FileReader();
 
-    reader.onload = function() {
-        const data = JSON.parse(reader.result);
-        const content = document.getElementById('content');
-        content.innerHTML = '';
+    reader.onload = function(e) {
+        try {
+            const data = JSON.parse(e.target.result);
+            const container = document.getElementById('output');
+            container.innerHTML = '';
 
-        data.forEach(item => {
-            const div = document.createElement('div');
-            div.textContent = item.text;
-            div.className = item.style;
-            content.appendChild(div);
-        });
+            data.forEach(item => {
+                const el = document.createElement(item.tag);
+                el.className = `var${item.variant}`;
+                el.textContent = item.text;
+                container.appendChild(el);
+            });
+        } catch (error) {
+            alert("Błąd w pliku JSON: " + error.message);
+        }
     };
 
-    if (file) {
-        reader.readAsText(file);
-    }
+    reader.readAsText(file);
 });

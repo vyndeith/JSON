@@ -1,23 +1,29 @@
-.styl1 {
-    background-color: lightblue;
+p.var1 {
     color: navy;
-    padding: 10px;
-    margin: 10px;
-    border: 2px solid navy;
+    font-size: 18px;
 }
 
-.styl2 {
-    background-color: lightgreen;
-    color: darkgreen;
-    padding: 10px;
-    margin: 10px;
-    border: 2px solid darkgreen;
+p.var2 {
+    color: green;
+    font-style: italic;
 }
 
-.styl3 {
-    background-color: lightcoral;
-    color: darkred;
-    padding: 10px;
-    margin: 10px;
-    border: 2px solid darkred;
+a.var1 {
+    color: red;
+    text-decoration: underline;
+}
+
+a.var2 {
+    color: orange;
+    font-weight: bold;
+}
+
+em.var1 {
+    color: purple;
+    font-size: 20px;
+}
+
+em.var2 {
+    color: teal;
+    background-color: lightgray;
 }
